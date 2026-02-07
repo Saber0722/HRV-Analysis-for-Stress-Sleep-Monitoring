@@ -1,0 +1,5 @@
+venv/*
+data/WESAD/*
+data/preprocessed/wesad/*
+WESAD.zip
+utils/__pycache__/*
