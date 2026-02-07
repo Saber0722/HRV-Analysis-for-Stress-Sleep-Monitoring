@@ -17,7 +17,8 @@ The output of this work serves as the **foundation** for the primary temporal mo
 
 ## Dataset
 
-We use the **WESAD (WEarable Stress and Affect Detection)** dataset.
+- We use the **[WESAD (WEarable Stress and Affect Detection)](https://ubi29.informatik.uni-siegen.de/usi/data_wesad.html)** dataset.
+
 
 **Source:**
 PhysioNet – WESAD Dataset
