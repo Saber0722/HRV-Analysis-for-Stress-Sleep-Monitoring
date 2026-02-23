@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 138 76% 97%;
+    --foreground: 150 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 40% 10%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 138 60% 92%;
+    --secondary-foreground: 142 72% 20%;
+
+    --muted: 138 30% 94%;
+    --muted-foreground: 150 10% 45%;
+
+    --accent: 142 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 142 20% 88%;
+    --input: 142 20% 88%;
+    --ring: 142 72% 29%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(142 69% 58%), hsl(142 72% 29%));
+    --gradient-subtle: linear-gradient(135deg, hsl(138 76% 97%), hsl(138 60% 92%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(138 40% 98%));
+    --shadow-soft: 0 2px 16px -4px hsl(142 72% 29% / 0.1);
+    --shadow-card: 0 4px 24px -8px hsl(142 72% 29% / 0.12);
+    --shadow-elevated: 0 8px 40px -12px hsl(142 72% 29% / 0.18);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 142 72% 29%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 138 60% 92%;
+    --sidebar-accent-foreground: 142 72% 20%;
+    --sidebar-border: 142 20% 88%;
+    --sidebar-ring: 142 72% 29%;
+  }
+
+  .dark {
+    --background: 150 30% 6%;
+    --foreground: 138 20% 95%;
+
+    --card: 150 25% 10%;
+    --card-foreground: 138 20% 95%;
+
+    --popover: 150 25% 10%;
+    --popover-foreground: 138 20% 95%;
+
+    --primary: 142 69% 58%;
+    --primary-foreground: 150 40% 6%;
+
+    --secondary: 150 20% 16%;
+    --secondary-foreground: 138 20% 95%;
+
+    --muted: 150 15% 18%;
+    --muted-foreground: 138 10% 60%;
+
+    --accent: 142 60% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 150 15% 18%;
+    --input: 150 15% 18%;
+    --ring: 142 69% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-sm border border-border shadow-card rounded-2xl;
+  }
+}
