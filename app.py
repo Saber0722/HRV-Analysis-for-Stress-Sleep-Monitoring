@@ -15,6 +15,7 @@ DATA_PATH = "data/WESAD"
 
 st.set_page_config(page_title="WESAD ECG Explorer", layout="wide")
 
+
 st.title("🫀 WESAD ECG Data Explorer")
 
 # Sidebar
