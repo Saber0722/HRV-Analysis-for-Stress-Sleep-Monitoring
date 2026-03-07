@@ -6,7 +6,6 @@ import tempfile
 from fastapi.middleware.cors import CORSMiddleware
 
 
-
 from services.signal_processing import (
     load_signal,
     detect_r_peaks,

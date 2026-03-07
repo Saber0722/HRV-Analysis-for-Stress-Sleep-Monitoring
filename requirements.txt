@@ -18,3 +18,5 @@ ipykernel>=6.15
 
 streamlit>=1.20
 plotly>=5.14
+
+tensorflow
